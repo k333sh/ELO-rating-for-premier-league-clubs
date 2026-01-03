@@ -50,19 +50,7 @@ This repo is designed as a **sports analytics portfolio piece**, showcasing data
 
 3. **Dynamic home advantage**
    - Base home advantage derived from historical home win probability (~45.7%)
-   - Adjusted using rating difference:
-     
-     
-
-\[
-     H = H_0 \cdot \left(1 + \frac{\Delta R}{4000}\right)
-     \]
-
-
-     
-     Where:
-     - \(H_0\) ≈ 55 (from data)
-     - \(\Delta R = R_{\text{home}} - R_{\text{away}}\)
+   - Adjusted using rating differences
 
 4. **Expected scores**
    - Uses the standard ELO logistic function on adjusted ratings (home rating + H)
@@ -73,11 +61,6 @@ This repo is designed as a **sports analytics portfolio piece**, showcasing data
    - New rating:
      
      
-
-\[
-     R_{\text{new}} = R_{\text{old}} + K \cdot (S - E)
-     \]
-
 
 
 6. **History tracking**
